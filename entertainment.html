@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jose's Entertainment Hub 🎉</title>
+</head>
+<body>
+    <!-- Interactive Navigation Links -->
+    <header>
+        <nav id="navbar">
+            <h2>🌐 Navigate the Site</h2>
+            <ul>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#cta">Watch/Listen</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Eye-catching Image Gallery -->
+    <main>
+        <section id="gallery">
+            <h2>🎬 Featured Content Gallery 📸</h2>
+            <div class="image-gallery">
+                <img src="movie1.jpg" alt="Movie Poster 1">
+                <img src="album1.jpg" alt="Album Cover 1">
+                <img src="game1.jpg" alt="Game Screenshot 1">
+                <!-- Add more images as needed -->
+            </div>
+        </section>
+
+        <!-- Dynamic Call-to-Action Buttons -->
+        <section id="cta">
+            <h2>🚀 Dive into the Entertainment 🚀</h2>
+            <button class="cta-button">Watch Now 🎥</button>
+            <button class="cta-button">Listen Here 🎶</button>
+            <button class="cta-button">Play Game 🎮</button>
+        </section>
+
+        <!-- Interactive Form for User Feedback -->
+        <section id="feedback">
+            <h2>📢 We Value Your Feedback 📝</h2>
+            <form action="/submit_feedback" method="post">
+                <label for="username">Name:</label>
+                <input type="text" id="username" name="username" required placeholder="Your Name...">
+
+                <label for="rating">Rating (1-5):</label>
+                <select id="rating" name="rating">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" required placeholder="Share your thoughts..."></textarea>
+
+                <button type="submit" class="cta-button">Submit Feedback 💌</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
